@@ -13,9 +13,6 @@ app.listen(port, () => {
 });
 
 //ele vai chamar o router
-app.use("/api", router, (req, res) => {
-  //se cair na rota default ele vai retornar a mesagem
-  res.status(200).json({ message: "Home Page " });
-});
+app.use("/api", router);
 
 export default app;
